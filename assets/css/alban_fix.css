@@ -1,0 +1,63 @@
+body, .v-application{
+  font-family: "Montserrat", Arial, sans-serif!important;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #999999;
+}
+@media (max-width: 991px) {
+  .colorlib-nav-toggle {
+    opacity: 1;
+    visibility: visible;
+  }
+  .colorlib-nav-toggle i, .colorlib-nav-toggle i::before, .colorlib-nav-toggle i::after, .colorlib-nav-toggle.active i::before, .colorlib-nav-toggle.active i::after{
+    background: black;
+  }
+}
+#colorlib-aside.active {
+  -moz-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  width: 270px;
+  background: #000;
+  z-index: 999;
+  position: fixed; }
+.v-content.active, .colorlib-nav-toggle.active {
+  top: 0;
+  -moz-transform: translateX(270px);
+  -webkit-transform: translateX(270px);
+  -ms-transform: translateX(270px);
+  -o-transform: translateX(270px);
+  transform: translateX(270px);
+}
+
+@media (max-width: 767.98px){
+  .photography-entry .overlay {
+    opacity: .3;
+  }
+  .photography-entry .text {
+    opacity: 1;
+  }
+}
+@media (min-width: 992px){
+  #colorlib-main {
+    width: 80%;
+    margin-left: 20%;
+  }
+}
+p{
+  color: #999999!important;
+}
+.breadcrumbs{
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  z-index: 99;
+  color: #999999!important;
+}
+.breadcrumbs a{
+  color:  #999999;
+}
