@@ -1,5 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
-const webpack = require("webpack");
+import webpack from 'webpack'
 
 export default {
   mode: 'universal',
@@ -25,8 +25,8 @@ export default {
   /*
   ** Global CSS
   */
-  css: ["~/assets/fonts/Montserrat.css","~/node_modules/bootstrap/dist/css/bootstrap.css",'@/assets/css/css_import.css','@/assets/css/import_scss.scss','@/assets/css/flaticon.css', '@/assets/css/icomoon.css','@/assets/css/alban_fix.css'],
-  plugins: ["~plugins/bootstrap.js"],
+  css: ['~/assets/fonts/Montserrat.css', '~/node_modules/bootstrap/dist/css/bootstrap.css', '@/assets/css/css_import.css', '@/assets/css/import_scss.scss', '@/assets/css/flaticon.css', '@/assets/css/icomoon.css', '@/assets/css/alban_fix.css'],
+  plugins: ['~plugins/bootstrap.js'],
   /*
   ** Nuxt.js dev-modules
   */
@@ -76,23 +76,23 @@ export default {
     /**
      * add external plugins
      */
-    vendor: ["jquery", "bootstrap"],
+    vendor: ['jquery', 'bootstrap'],
     plugins: [
       new webpack.ProvidePlugin({
-        $: "jquery"
+        $: 'jquery'
       })
     ],
     /*
     ** Run ESLint on save
     */
-    extend(config, { isDev, isClient }) {
+    extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
-          enforce: "pre",
+          enforce: 'pre',
           test: /\.(js|vue)$/,
-          loader: "eslint-loader",
+          loader: 'eslint-loader',
           exclude: /(node_modules)/
-        });
+        })
       }
     }
   }

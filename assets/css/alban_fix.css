@@ -21,7 +21,6 @@ body, .v-application{
   -o-transform: translateX(0);
   transform: translateX(0);
   width: 270px;
-  background: #000;
   z-index: 999;
   position: fixed; }
 .v-content.active, .colorlib-nav-toggle.active {
@@ -41,12 +40,6 @@ body, .v-application{
     opacity: 1;
   }
 }
-@media (min-width: 992px){
-  #colorlib-main {
-    width: 80%;
-    margin-left: 20%;
-  }
-}
 p{
   color: #999999!important;
 }
@@ -60,4 +53,20 @@ p{
 }
 .breadcrumbs a{
   color:  #999999;
+}
+footer{
+  width: 80%;
+  margin-left: 20%;
+}
+@media (min-width: 992px){
+  #colorlib-main {
+    width: 80%;
+    margin-left: 20%;
+  }
+}
+@media (max-width: 992px) {
+  footer{
+    width: 100%;
+    margin: 0;
+  }
 }

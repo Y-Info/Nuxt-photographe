@@ -1,37 +1,20 @@
-import Vue from 'vue'
 import Vuex from 'vuex'
-Vue.use(Vuex)
 
-// eslint-disable-next-line no-new
-new Vuex.Store({
-  state: () => ({
-    counter: 0
-  }),
-  mutations: {
-    increment (state) {
-      state.counter++
-    }
-  },
-  modules: {
-    todos: {
-      namespaced: true,
-      state: () => ({
-        list: []
-      }),
-      mutations: {
-        add (state, { text }) {
-          state.list.push({
-            text,
-            done: false
-          })
-        },
-        remove (state, { todo }) {
-          state.list.splice(state.list.indexOf(todo), 1)
-        },
-        toggle (state, { todo }) {
-          todo.done = !todo.done
-        }
+const createStore = () => {
+  return new Vuex.Store({
+    state: () => ({
+      menuTriger: false,
+      currentPage: 'home'
+    }),
+    mutations: {
+      triger_menu (state) {
+        state.menuTriger = !state.menuTriger
+      },
+      change_name (state, name) {
+        state.currentPage = name
       }
     }
-  }
-})
+  })
+}
+
+export default createStore
