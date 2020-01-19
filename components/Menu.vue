@@ -45,13 +45,23 @@
             About
           </nuxt-link>
         </li>
-        <li>
-          <nuxt-link color="primary" nuxt to="/">
+        <li v-if="$store.state.currentPage === 'Blog'" class="colorlib-active">
+          <nuxt-link color="primary" nuxt to="/blog">
             Blog
           </nuxt-link>
         </li>
-        <li>
-          <nuxt-link color="primary" nuxt to="/">
+        <li v-else>
+          <nuxt-link color="primary" nuxt to="/blog">
+            Blog
+          </nuxt-link>
+        </li>
+        <li v-if="$store.state.currentPage === 'Contact'" class="colorlib-active">
+          <nuxt-link color="primary" nuxt to="/contact">
+            Contact
+          </nuxt-link>
+        </li>
+        <li v-else>
+          <nuxt-link color="primary" nuxt to="/contact">
             Contact
           </nuxt-link>
         </li>

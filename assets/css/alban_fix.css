@@ -5,6 +5,12 @@ body, .v-application{
   font-weight: 500;
   color: #999999;
 }
+main{
+  background-color: white;
+}
+.v-application .info{
+  background-color: white!important;
+}
 @media (max-width: 991px) {
   .colorlib-nav-toggle {
     opacity: 1;
@@ -63,10 +69,25 @@ footer{
     width: 80%;
     margin-left: 20%;
   }
+  body{
+    overflow: hidden;
+  }
 }
 @media (max-width: 992px) {
   footer{
     width: 100%;
     margin: 0;
   }
+}
+
+#map{
+  overflow: hidden;
+}
+#map>img{
+  width: auto;
+  height: 100%;
+}
+.colorlib-footer a{
+  padding-top: 6px!important;
+  padding-left: 6px;
 }

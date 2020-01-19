@@ -1,0 +1,289 @@
+<template>
+  <section>
+    <section class="ftco-section bg-light ftco-bread">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center">
+          <div class="col-md-9">
+            <p class="breadcrumbs">
+              <span class="mr-2"><nuxt-link nuxt to="/">Home</nuxt-link></span> <span>Blog</span>
+            </p>
+            <h1 class="mb-3 bread">
+              Read Our Articles
+            </h1>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="blog-entry">
+                  <a href="single.html" class="img img-2" style="background-image: url(images/image_1.jpg);" />
+                  <div class="text text-2 pt-2 mt-3">
+                    <h3 class="mb-2">
+                      <a href="single.html">The Photography Technique</a>
+                    </h3>
+                    <div class="meta-wrap">
+                      <p class="meta">
+                        <span>Dec 14, 2018</span>
+                        <span><a href="single.html">Photography</a></span>
+                        <span>5 Comment</span>
+                      </p>
+                    </div>
+                    <p class="mb-4">
+                      A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog-entry">
+                  <a href="single.html" class="img img-2" style="background-image: url(images/image_2.jpg);" />
+                  <div class="text text-2 pt-2 mt-3">
+                    <h3 class="mb-2">
+                      <a href="single.html">The Photography Technique</a>
+                    </h3>
+                    <div class="meta-wrap">
+                      <p class="meta">
+                        <span>Dec 14, 2018</span>
+                        <span><a href="single.html">Photography</a></span>
+                        <span>5 Comment</span>
+                      </p>
+                    </div>
+                    <p class="mb-4">
+                      A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog-entry">
+                  <a href="single.html" class="img img-2" style="background-image: url(images/image_3.jpg);" />
+                  <div class="text text-2 pt-2 mt-3">
+                    <h3 class="mb-2">
+                      <a href="single.html">The Photography Technique</a>
+                    </h3>
+                    <div class="meta-wrap">
+                      <p class="meta">
+                        <span>Dec 14, 2018</span>
+                        <span><a href="single.html">Photography</a></span>
+                        <span>5 Comment</span>
+                      </p>
+                    </div>
+                    <p class="mb-4">
+                      A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog-entry">
+                  <a href="single.html" class="img img-2" style="background-image: url(images/image_4.jpg);" />
+                  <div class="text text-2 pt-2 mt-3">
+                    <h3 class="mb-2">
+                      <a href="single.html">The Photography Technique</a>
+                    </h3>
+                    <div class="meta-wrap">
+                      <p class="meta">
+                        <span>Dec 14, 2018</span>
+                        <span><a href="single.html">Photography</a></span>
+                        <span>5 Comment</span>
+                      </p>
+                    </div>
+                    <p class="mb-4">
+                      A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog-entry">
+                  <a href="single.html" class="img img-2" style="background-image: url(images/image_5.jpg);" />
+                  <div class="text text-2 pt-2 mt-3">
+                    <h3 class="mb-2">
+                      <a href="single.html">The Photography Technique</a>
+                    </h3>
+                    <div class="meta-wrap">
+                      <p class="meta">
+                        <span>Dec 14, 2018</span>
+                        <span><a href="single.html">Photography</a></span>
+                        <span>5 Comment</span>
+                      </p>
+                    </div>
+                    <p class="mb-4">
+                      A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog-entry">
+                  <a href="single.html" class="img img-2" style="background-image: url(images/image_6.jpg);" />
+                  <div class="text text-2 pt-2 mt-3">
+                    <h3 class="mb-2">
+                      <a href="single.html">The Photography Technique</a>
+                    </h3>
+                    <div class="meta-wrap">
+                      <p class="meta">
+                        <span>Dec 14, 2018</span>
+                        <span><a href="single.html">Photography</a></span>
+                        <span>5 Comment</span>
+                      </p>
+                    </div>
+                    <p class="mb-4">
+                      A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog-entry">
+                  <a href="single.html" class="img img-2" style="background-image: url(images/image_7.jpg);" />
+                  <div class="text text-2 pt-2 mt-3">
+                    <h3 class="mb-2">
+                      <a href="single.html">The Photography Technique</a>
+                    </h3>
+                    <div class="meta-wrap">
+                      <p class="meta">
+                        <span>Dec 14, 2018</span>
+                        <span><a href="single.html">Photography</a></span>
+                        <span>5 Comment</span>
+                      </p>
+                    </div>
+                    <p class="mb-4">
+                      A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="blog-entry">
+                  <a href="single.html" class="img img-2" style="background-image: url(images/image_8.jpg);" />
+                  <div class="text text-2 pt-2 mt-3">
+                    <h3 class="mb-2">
+                      <a href="single.html">The Photography Technique</a>
+                    </h3>
+                    <div class="meta-wrap">
+                      <p class="meta">
+                        <span>Dec 14, 2018</span>
+                        <span><a href="single.html">Photography</a></span>
+                        <span>5 Comment</span>
+                      </p>
+                    </div>
+                    <p class="mb-4">
+                      A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- END-->
+            <div class="row mt-5">
+              <div class="col text-center">
+                <div class="block-27">
+                  <ul>
+                    <li><a href="#">&lt;</a></li>
+                    <li class="active">
+                      <span>1</span>
+                    </li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&gt;</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 sidebar bg-light">
+            <div class="sidebar-box">
+              <h3 class="sidebar-heading">
+                Categories
+              </h3>
+              <ul class="categories">
+                <li><a href="#">Fashion <span>(6)</span></a></li>
+                <li><a href="#">Technology <span>(8)</span></a></li>
+                <li><a href="#">Travel <span>(2)</span></a></li>
+                <li><a href="#">Food <span>(2)</span></a></li>
+                <li><a href="#">Photography <span>(7)</span></a></li>
+              </ul>
+            </div>
+
+            <div class="sidebar-box">
+              <h3 class="sidebar-heading">
+                Popular Articles
+              </h3>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);" />
+                <div class="text">
+                  <h3 class="heading">
+                    <a href="#">Even the all-powerful Pointing has no control</a>
+                  </h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar" /> Oct. 04, 2018</a></div>
+                    <div><a href="#"><span class="icon-person" /> Dave Lewis</a></div>
+                    <div><a href="#"><span class="icon-chat" /> 19</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);" />
+                <div class="text">
+                  <h3 class="heading">
+                    <a href="#">Even the all-powerful Pointing has no control</a>
+                  </h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar" /> Oct. 04, 2018</a></div>
+                    <div><a href="#"><span class="icon-person" /> Dave Lewis</a></div>
+                    <div><a href="#"><span class="icon-chat" /> 19</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg);" />
+                <div class="text">
+                  <h3 class="heading">
+                    <a href="#">Even the all-powerful Pointing has no control</a>
+                  </h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar" /> Oct. 04, 2018</a></div>
+                    <div><a href="#"><span class="icon-person" /> Dave Lewis</a></div>
+                    <div><a href="#"><span class="icon-chat" /> 19</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-box">
+              <h3 class="sidebar-heading">
+                Tag Cloud
+              </h3>
+              <ul class="tagcloud">
+                <a href="#" class="tag-cloud-link">animals</a>
+                <a href="#" class="tag-cloud-link">human</a>
+                <a href="#" class="tag-cloud-link">people</a>
+                <a href="#" class="tag-cloud-link">cat</a>
+                <a href="#" class="tag-cloud-link">dog</a>
+                <a href="#" class="tag-cloud-link">nature</a>
+                <a href="#" class="tag-cloud-link">leaves</a>
+                <a href="#" class="tag-cloud-link">food</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</template>
+
+<script>
+export default {
+  async fetch ({ store }) {
+    await store.commit('change_name', 'Blog')
+  }
+}
+</script>

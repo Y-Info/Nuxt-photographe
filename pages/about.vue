@@ -5,7 +5,7 @@
         <div class="row no-gutters slider-text align-items-center">
           <div class="col-md-9">
             <p class="breadcrumbs">
-              <span class="mr-2"><a href="index.html">Home</a></span> <span>About</span>
+              <span class="mr-2"><nuxt-link nuxt to="/">Home</nuxt-link></span> <span>About</span>
             </p>
             <h1 class="mb-3 bread">
               About Us
