@@ -8,9 +8,6 @@ body, .v-application{
 main{
   background-color: white;
 }
-.v-application .info{
-  background-color: white!important;
-}
 @media (max-width: 991px) {
   .colorlib-nav-toggle {
     opacity: 1;
