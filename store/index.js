@@ -10,6 +10,9 @@ const createStore = () => {
       triger_menu (state) {
         state.menuTriger = !state.menuTriger
       },
+      unset_menu (state) {
+        state.menuTriger = false
+      },
       change_name (state, name) {
         state.currentPage = name
       }

@@ -118,6 +118,7 @@
 <script>
 export default {
   async fetch ({ store }) {
+    await store.commit('unset_menu')
     await store.commit('change_name', 'Home')
   }
 }

@@ -25,7 +25,7 @@ export default {
   /*
   ** Global CSS
   */
-  css: ['~/assets/fonts/Montserrat.css', '~/node_modules/bootstrap/dist/css/bootstrap.css', '@/assets/css/css_import.css', '@/assets/css/import_scss.scss', '@/assets/css/flaticon.css', '@/assets/css/icomoon.css', '@/assets/css/alban_fix.css'],
+  css: ['~/assets/fonts/Montserrat.css', '~/node_modules/bootstrap/dist/css/bootstrap.css', '@/assets/css/import_scss.scss', '@/assets/css/icomoon.css', '@/assets/css/alban_fix.css'],
   plugins: ['~plugins/bootstrap.js'],
   /*
   ** Nuxt.js dev-modules
