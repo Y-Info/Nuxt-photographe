@@ -4,7 +4,6 @@
       v-bind:class="{ active: $store.state.menuTriger }"
     />
     <Menu />
-    <PageHead />
     <v-content
       id="colorlib-main"
       v-bind:class="{ active: $store.state.menuTriger }"
@@ -19,17 +18,33 @@
 import Footer from '../components/Footer'
 import Menu from '../components/Menu'
 import Burger from '../components/Burger'
-import PageHead from '../components/PageHead'
 
 export default {
   components: {
     Footer,
     Menu,
-    Burger,
-    PageHead
+    Burger
   },
   data () {
     return {
+      clipped: false,
+      drawer: false,
+      fixed: false,
+      items: [
+        {
+          icon: 'mdi-apps',
+          title: 'Welcome',
+          to: '/'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Blog',
+          to: '/Blog'
+        }
+      ],
+      miniVariant: false,
+      right: true,
+      rightDrawer: false,
       title: 'Vuetify.js'
     }
   }

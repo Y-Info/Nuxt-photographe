@@ -211,7 +211,6 @@ h1, h2, h3, h4, h5,
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 @media (min-width: 992px) {
   #colorlib-aside {
@@ -262,7 +261,6 @@ h1, h2, h3, h4, h5,
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 #colorlib-aside #colorlib-main-menu ul li a:after {
   content: "";
@@ -280,7 +278,6 @@ h1, h2, h3, h4, h5,
   transform: scaleX(0);
   -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 #colorlib-aside #colorlib-main-menu ul li a:hover {
@@ -337,7 +334,6 @@ h1, h2, h3, h4, h5,
   font-size: 18px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
   background: #f46665; }
 #colorlib-aside .colorlib-footer ul li a:hover, #colorlib-aside .colorlib-footer ul li a:active, #colorlib-aside .colorlib-footer ul li a:focus {
@@ -345,3 +341,17 @@ h1, h2, h3, h4, h5,
   outline: none;
   color: #000000;
   background: #fff; }
+
+.ftco-section.bg-light{
+  width: 80%;
+  margin-left: 20%;
+}
+
+@media (max-width: 991.98px) {
+  .ftco-section.bg-light{
+    width: 100%;
+    margin:0;
+  }
+}
+
+
