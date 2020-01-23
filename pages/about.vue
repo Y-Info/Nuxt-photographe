@@ -29,19 +29,26 @@
   </section>
 </template>
 <script>
-const test = 'vraiment un bon test ca'
 export default {
   data () {
     return {
-      title_page: 'oqwdjoxsn',
-      content_page: 'Je suis le magnifique content'
+      title: 'Mon jolie titre',
+      meta_desc: 'Je suis le magnifique content'
+    }
+  },
+  head () {
+    return {
+      title: this.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.meta_desc }
+      ]
     }
   },
   async fetch ({ store }) {
     await store.commit('unset_menu')
-    await store.commit('change_name', 'About')
-    await store.commit('change_title', test)
-    await store.commit('change_content', 'je suis le contenu')
+    await store.commit('changeH1', 'About- Title')
+    await store.commit('changeTitle', 'About')
+    await store.commit('changeContent', 'About - Content')
   }
 }
 </script>

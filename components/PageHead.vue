@@ -7,9 +7,9 @@
             <span class="mr-2"><nuxt-link nuxt to="/">Home</nuxt-link></span> <span>{{ $store.state.currentPage }}</span>
           </p>
           <h1 class="mb-3 bread">
-            {{ $store.state.title_page }}
+            {{ $store.state.H1 }}
           </h1>
-          <p>{{ $store.state.content_page }}</p>
+          <p>{{ $store.state.pageContent }}</p>
         </div>
       </div>
     </div>

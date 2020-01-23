@@ -265,9 +265,25 @@
 
 <script>
 export default {
+  data () {
+    return {
+      title: 'Mon jolie titre',
+      meta_desc: 'Je suis le magnifique content'
+    }
+  },
+  head () {
+    return {
+      title: this.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.meta_desc }
+      ]
+    }
+  },
   async fetch ({ store }) {
     await store.commit('unset_menu')
-    await store.commit('change_name', 'Blog')
+    await store.commit('changeTitle', 'Blog')
+    await store.commit('changeH1', 'Blog - title')
+    await store.commit('changeContent', 'Blog - content')
   }
 }
 </script>

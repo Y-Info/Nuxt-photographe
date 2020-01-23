@@ -116,9 +116,26 @@
 </template>
 <script>
 export default {
+  title: 'hello',
+  data () {
+    return {
+      title: 'Mon jolie titre',
+      meta_desc: 'Je suis le magnifique content'
+    }
+  },
+  head () {
+    return {
+      title: this.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.meta_desc }
+      ]
+    }
+  },
   async fetch ({ store }) {
     await store.commit('unset_menu')
-    await store.commit('change_name', 'Gallery')
+    await store.commit('changeH1', 'Gallery - title')
+    await store.commit('changeTitle', 'Gallery')
+    await store.commit('changeContent', 'Gallery - content')
   }
 }
 </script>

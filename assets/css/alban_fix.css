@@ -341,17 +341,3 @@ h1, h2, h3, h4, h5,
   outline: none;
   color: #000000;
   background: #fff; }
-
-.ftco-section.bg-light{
-  width: 80%;
-  margin-left: 20%;
-}
-
-@media (max-width: 991.98px) {
-  .ftco-section.bg-light{
-    width: 100%;
-    margin:0;
-  }
-}
-
-

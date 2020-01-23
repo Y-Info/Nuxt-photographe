@@ -4,11 +4,11 @@
       v-bind:class="{ active: $store.state.menuTriger }"
     />
     <Menu />
-    <PageHead />
     <v-content
       id="colorlib-main"
       v-bind:class="{ active: $store.state.menuTriger }"
     >
+      <PageHead />
       <nuxt />
     </v-content>
     <Footer />
@@ -27,11 +27,6 @@ export default {
     Menu,
     Burger,
     PageHead
-  },
-  data () {
-    return {
-      title: 'Vuetify.js'
-    }
   }
 }
 </script>

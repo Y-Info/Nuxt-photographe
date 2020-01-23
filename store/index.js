@@ -4,9 +4,9 @@ const createStore = () => {
   return new Vuex.Store({
     state: () => ({
       menuTriger: false,
-      currentPage: 'home',
-      title_page: 'home',
-      content_page: ''
+      currentPage: 'Home',
+      H1: 'home',
+      pageContent: ''
     }),
     mutations: {
       triger_menu (state) {
@@ -15,14 +15,14 @@ const createStore = () => {
       unset_menu (state) {
         state.menuTriger = false
       },
-      change_name (state, name) {
+      changeTitle (state, name) {
         state.currentPage = name
       },
-      change_title (state, newTitle) {
-        state.title_page = newTitle
+      changeH1 (state, newTitle) {
+        state.H1 = newTitle
       },
-      change_content (state, newContent) {
-        state.content_page = newContent
+      changeContent (state, newContent) {
+        state.pageContent = newContent
       }
     }
   })
