@@ -44,122 +44,22 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div v-for="post in posts " class="col-md-6">
               <div class="blog-entry">
-                <a href="single.html" class="img img-2" style="background-image: url(images/image_3.jpg);" />
+                <a href="single.html" class="img img-2" style="background-image: url(images/image_2.jpg);" />
                 <div class="text text-2 pt-2 mt-3">
                   <h3 class="mb-2">
-                    <a href="single.html">The Photography Technique</a>
+                    <a href="single.html">{{ post.title }}</a>
                   </h3>
                   <div class="meta-wrap">
                     <p class="meta">
                       <span>Dec 14, 2018</span>
-                      <span><a href="single.html">Photography</a></span>
+                      <span><a href="single.html">{{ post.category }}</a></span>
                       <span>5 Comment</span>
                     </p>
                   </div>
                   <p class="mb-4">
-                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="blog-entry">
-                <a href="single.html" class="img img-2" style="background-image: url(images/image_4.jpg);" />
-                <div class="text text-2 pt-2 mt-3">
-                  <h3 class="mb-2">
-                    <a href="single.html">The Photography Technique</a>
-                  </h3>
-                  <div class="meta-wrap">
-                    <p class="meta">
-                      <span>Dec 14, 2018</span>
-                      <span><a href="single.html">Photography</a></span>
-                      <span>5 Comment</span>
-                    </p>
-                  </div>
-                  <p class="mb-4">
-                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="blog-entry">
-                <a href="single.html" class="img img-2" style="background-image: url(images/image_5.jpg);" />
-                <div class="text text-2 pt-2 mt-3">
-                  <h3 class="mb-2">
-                    <a href="single.html">The Photography Technique</a>
-                  </h3>
-                  <div class="meta-wrap">
-                    <p class="meta">
-                      <span>Dec 14, 2018</span>
-                      <span><a href="single.html">Photography</a></span>
-                      <span>5 Comment</span>
-                    </p>
-                  </div>
-                  <p class="mb-4">
-                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="blog-entry">
-                <a href="single.html" class="img img-2" style="background-image: url(images/image_6.jpg);" />
-                <div class="text text-2 pt-2 mt-3">
-                  <h3 class="mb-2">
-                    <a href="single.html">The Photography Technique</a>
-                  </h3>
-                  <div class="meta-wrap">
-                    <p class="meta">
-                      <span>Dec 14, 2018</span>
-                      <span><a href="single.html">Photography</a></span>
-                      <span>5 Comment</span>
-                    </p>
-                  </div>
-                  <p class="mb-4">
-                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="blog-entry">
-                <a href="single.html" class="img img-2" style="background-image: url(images/image_7.jpg);" />
-                <div class="text text-2 pt-2 mt-3">
-                  <h3 class="mb-2">
-                    <a href="single.html">The Photography Technique</a>
-                  </h3>
-                  <div class="meta-wrap">
-                    <p class="meta">
-                      <span>Dec 14, 2018</span>
-                      <span><a href="single.html">Photography</a></span>
-                      <span>5 Comment</span>
-                    </p>
-                  </div>
-                  <p class="mb-4">
-                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="blog-entry">
-                <a href="single.html" class="img img-2" style="background-image: url(images/image_8.jpg);" />
-                <div class="text text-2 pt-2 mt-3">
-                  <h3 class="mb-2">
-                    <a href="single.html">The Photography Technique</a>
-                  </h3>
-                  <div class="meta-wrap">
-                    <p class="meta">
-                      <span>Dec 14, 2018</span>
-                      <span><a href="single.html">Photography</a></span>
-                      <span>5 Comment</span>
-                    </p>
-                  </div>
-                  <p class="mb-4">
-                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                    {{ post.content }}
                   </p>
                 </div>
               </div>
@@ -268,7 +168,23 @@ export default {
   data () {
     return {
       title: 'Mon jolie titre',
-      meta_desc: 'Je suis le magnifique content'
+      meta_desc: 'Je suis le magnifique content',
+      posts: [
+        {
+          id: 1,
+          title: 'je suis le premier article',
+          content: 'je suis le content de l\'article',
+          category: 'category',
+          img: 'je suis une premiere image'
+        },
+        {
+          id: 2,
+          title: 'je suis un second titre',
+          content: 'je suis le content de l\'article',
+          category: 'category',
+          img: 'je suis la seconde image'
+        }
+      ]
     }
   },
   head () {
