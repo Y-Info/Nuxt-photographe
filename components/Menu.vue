@@ -46,7 +46,7 @@
             About
           </nuxt-link>
         </li>
-        <li v-if="$store.state.currentPage === 'Blog'" class="colorlib-active">
+        <li v-if="$store.state.currentPage === 'Blog' || $store.state.currentPage === 'Article' " class="colorlib-active">
           <nuxt-link color="primary" nuxt to="/blog">
             Blog
           </nuxt-link>

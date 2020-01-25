@@ -4,7 +4,7 @@
       <div class="row no-gutters slider-text align-items-center">
         <div class="col-md-9">
           <p class="breadcrumbs">
-            <span class="mr-2"><nuxt-link nuxt to="/">Home</nuxt-link></span> <span>{{ $store.state.currentPage }}</span>
+            <span class="mr-2"><nuxt-link nuxt to="/">Home</nuxt-link></span><span v-if="$store.state.currentPage === 'Article'" class="mr-2"><nuxt-link nuxt to="/blog">Blog</nuxt-link></span><span v-if="$store.state.currentPage==='Article'">{{ $store.state.H1 }}</span><span v-else>{{ $store.state.currentPage }}</span>
           </p>
           <h1 class="mb-3 bread">
             {{ $store.state.H1 }}
