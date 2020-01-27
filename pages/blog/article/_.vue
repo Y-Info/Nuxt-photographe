@@ -82,15 +82,16 @@
 </template>
 
 <script>
-import SideBar from '../../components/SideBar'
-
+import SideBar from '../../../components/SideBar'
+const tryThis = 'test'
 export default {
   components: {
     SideBar
   },
   data () {
     return {
-      title: 'Mon jolie titre',
+      tryThis: this.$nuxt.$route.path,
+      title: 'Article',
       meta_desc: 'Je suis le magnifique content',
       posts: [
         {
@@ -114,7 +115,7 @@ export default {
   async fetch ({ store }) {
     await store.commit('unset_menu')
     await store.commit('changeTitle', 'Article')
-    await store.commit('changeH1', 'Page Article test - title')
+    await store.commit('changeH1', tryThis)
     await store.commit('changeContent', 'Blog - content')
   }
 }

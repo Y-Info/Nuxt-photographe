@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import SideBar from '../../components/SideBar'
+import SideBar from '../../../components/SideBar'
 
 export default {
   components: {
@@ -88,9 +88,9 @@ export default {
   },
   async fetch ({ store }) {
     await store.commit('unset_menu')
-    await store.commit('changeTitle', 'Blog')
-    await store.commit('changeH1', 'Blog - title')
-    await store.commit('changeContent', 'Blog - content')
+    await store.commit('changeTitle', 'Category')
+    await store.commit('changeH1', 'Category')
+    await store.commit('changeContent', 'Blog - Category')
   }
 }
 </script>
