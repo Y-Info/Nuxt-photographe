@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-8">
           <h2 class="mb-3 font-weight-bold">
-            Innovative Agency
+            {{ posts.title }}
           </h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
           <p>
@@ -83,25 +83,22 @@
 
 <script>
 import SideBar from '../../../components/SideBar'
-const tryThis = 'test'
+
 export default {
   components: {
     SideBar
   },
   data () {
     return {
-      tryThis: this.$nuxt.$route.path,
       title: 'Article',
       meta_desc: 'Je suis le magnifique content',
-      posts: [
-        {
-          id: 1,
-          title: 'je suis le premier article',
-          content: 'je suis le content de l\'article',
-          category: 'category',
-          img: 'je suis une premiere image'
-        }
-      ]
+      posts: {
+        id: 1,
+        title: 'le titre',
+        content: 'je suis le content de l\'article',
+        category: 'category',
+        img: 'je suis une premiere image'
+      }
     }
   },
   head () {
@@ -112,10 +109,10 @@ export default {
       ]
     }
   },
-  async fetch ({ store }) {
+  async fetch ({ store, params }) {
     await store.commit('unset_menu')
     await store.commit('changeTitle', 'Article')
-    await store.commit('changeH1', tryThis)
+    await store.commit('changeH1', 'Article : ' + params.pathMatch)
     await store.commit('changeContent', 'Blog - content')
   }
 }

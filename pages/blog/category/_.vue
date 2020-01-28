@@ -6,7 +6,7 @@
           <div class="row">
             <div v-for="post in posts " class="col-md-6">
               <div class="blog-entry">
-                <a v-bind:href="'/blog/article/'+ post.id" class="img img-2" style="background-image: url(images/image_2.jpg);" />
+                <nuxt-link :to="{path: '/blog/article/' + post.title}" class="img img-2" style="background-image: url(/images/image_2.jpg);" />
                 <div class="text text-2 pt-2 mt-3">
                   <h3 class="mb-2">
                     <a href="single.html">{{ post.title }}</a>
@@ -86,10 +86,10 @@ export default {
       ]
     }
   },
-  async fetch ({ store }) {
+  async fetch ({ store, params }) {
     await store.commit('unset_menu')
     await store.commit('changeTitle', 'Category')
-    await store.commit('changeH1', 'Category')
+    await store.commit('changeH1', 'Category : ' + params.id)
     await store.commit('changeContent', 'Blog - Category')
   }
 }

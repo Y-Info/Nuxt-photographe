@@ -4,9 +4,9 @@
       <div class="row">
         <div class="col-lg-8">
           <div class="row">
-            <div v-for="post in posts " class="col-md-6">
+            <div v-for="post in posts " :key="post.id" class="col-md-6">
               <div class="blog-entry">
-                <a v-bind:href="'/blog/article/'+ post.id" class="img img-2" style="background-image: url(images/image_2.jpg);" />
+                <nuxt-link :to="{path: '/blog/article/' + post.title}" class="img img-2" style="background-image: url(images/image_2.jpg);" />
                 <div class="text text-2 pt-2 mt-3">
                   <h3 class="mb-2">
                     <a href="single.html">{{ post.title }}</a>

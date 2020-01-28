@@ -5,11 +5,13 @@
         Categories
       </h3>
       <ul class="categories">
-        <li><a href="#">Fashion <span>(6)</span></a></li>
-        <li><a href="#">Technology <span>(8)</span></a></li>
-        <li><a href="#">Travel <span>(2)</span></a></li>
-        <li><a href="#">Food <span>(2)</span></a></li>
-        <li><a href="#">Photography <span>(7)</span></a></li>
+        <li v-for="category in categories " :key="category.id">
+          <nuxt-link
+            :to="{path: '/blog/category/' + category.name}"
+          >
+            {{ category.name }}
+          </nuxt-link>
+        </li>
       </ul>
     </div>
 
@@ -18,7 +20,7 @@
         Popular Articles
       </h3>
       <div class="block-21 mb-4 d-flex">
-        <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);" />
+        <a class="blog-img mr-4" style="background-image: url(/images/image_1.jpg);" />
         <div class="text">
           <h3 class="heading">
             <a href="#">Even the all-powerful Pointing has no control</a>
@@ -31,7 +33,7 @@
         </div>
       </div>
       <div class="block-21 mb-4 d-flex">
-        <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);" />
+        <a class="blog-img mr-4" style="background-image: url(/images/image_2.jpg);" />
         <div class="text">
           <h3 class="heading">
             <a href="#">Even the all-powerful Pointing has no control</a>
@@ -44,7 +46,7 @@
         </div>
       </div>
       <div class="block-21 mb-4 d-flex">
-        <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg);" />
+        <a class="blog-img mr-4" style="background-image: url(/images/image_3.jpg);" />
         <div class="text">
           <h3 class="heading">
             <a href="#">Even the all-powerful Pointing has no control</a>
@@ -75,3 +77,22 @@
     </div>
   </div>
 </template>
+<script>
+
+export default {
+  data () {
+    return {
+      categories: [
+        {
+          id: 1,
+          name: 'test'
+        },
+        {
+          id: 2,
+          name: 'test_2'
+        }
+      ]
+    }
+  }
+}
+</script>
