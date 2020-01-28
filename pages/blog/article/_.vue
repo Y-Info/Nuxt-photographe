@@ -90,7 +90,7 @@ export default {
   },
   data () {
     return {
-      title: 'Article',
+      title: this.$route.params.pathMatch,
       meta_desc: 'Je suis le magnifique content',
       posts: {
         id: 1,

@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-8">
           <div class="row">
-            <div v-for="post in posts " :key="post.id" class="col-md-6">
+            <div v-for="post in posts" :key="post.id" class="col-md-6">
               <div class="blog-entry">
                 <nuxt-link :to="{path: '/blog/article/' + post.title}" class="img img-2" style="background-image: url(/images/image_2.jpg);" />
                 <div class="text text-2 pt-2 mt-3">
@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import SideBar from '../../components/SideBar'
+import SideBar from '../../../components/SideBar'
 
 export default {
   components: {
@@ -58,7 +58,7 @@ export default {
   },
   data () {
     return {
-      title: 'Mon jolie titre',
+      title: 'Blog category : ' + this.$route.params.pathMatch,
       meta_desc: 'Je suis le magnifique content',
       posts: [
         {
@@ -86,11 +86,11 @@ export default {
       ]
     }
   },
-  async fetch ({ store }) {
+  async fetch ({ store, params }) {
     await store.commit('unset_menu')
-    await store.commit('changeTitle', 'Blog')
-    await store.commit('changeH1', 'Blog - title')
-    await store.commit('changeContent', 'Blog - content')
+    await store.commit('changeTitle', 'Tag')
+    await store.commit('changeH1', 'Tag : ' + params.pathMatch)
+    await store.commit('changeContent', 'Blog - Tag')
   }
 }
 </script>

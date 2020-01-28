@@ -65,14 +65,9 @@
         Tag Cloud
       </h3>
       <ul class="tagcloud">
-        <a href="#" class="tag-cloud-link">animals</a>
-        <a href="#" class="tag-cloud-link">human</a>
-        <a href="#" class="tag-cloud-link">people</a>
-        <a href="#" class="tag-cloud-link">cat</a>
-        <a href="#" class="tag-cloud-link">dog</a>
-        <a href="#" class="tag-cloud-link">nature</a>
-        <a href="#" class="tag-cloud-link">leaves</a>
-        <a href="#" class="tag-cloud-link">food</a>
+        <nuxt-link v-for="tag in tags " :key="tag.id" :to="{path: '/blog/tag/' + tag.name}" class="tag-cloud-link">
+          {{ tag.name }}
+        </nuxt-link>
       </ul>
     </div>
   </div>
@@ -90,6 +85,39 @@ export default {
         {
           id: 2,
           name: 'test_2'
+        }
+      ],
+      tags: [
+        { id: 1,
+          name: 'animals'
+        },
+        {
+          id: 2,
+          name: 'Human'
+        },
+        {
+          id: 3,
+          name: 'people'
+        },
+        {
+          id: 4,
+          name: 'cat'
+        },
+        {
+          id: 5,
+          name: 'dog'
+        },
+        {
+          id: 6,
+          name: 'nature'
+        },
+        {
+          id: 7,
+          name: 'leaves'
+        },
+        {
+          id: 8,
+          name: 'food'
         }
       ]
     }

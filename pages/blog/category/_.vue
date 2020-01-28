@@ -4,17 +4,17 @@
       <div class="row">
         <div class="col-lg-8">
           <div class="row">
-            <div v-for="post in posts " class="col-md-6">
+            <div v-for="post in posts" :key="post.id" class="col-md-6">
               <div class="blog-entry">
                 <nuxt-link :to="{path: '/blog/article/' + post.title}" class="img img-2" style="background-image: url(/images/image_2.jpg);" />
                 <div class="text text-2 pt-2 mt-3">
                   <h3 class="mb-2">
-                    <a href="single.html">{{ post.title }}</a>
+                    <nuxt-link :to="{path: '/blog/article/' + post.title}">{{ post.title }}</nuxt-link>
                   </h3>
                   <div class="meta-wrap">
                     <p class="meta">
                       <span>Dec 14, 2018</span>
-                      <span><a href="single.html">{{ post.category }}</a></span>
+                      <span><nuxt-link :to="{path: '/blog/category/' + post.category}">{{ post.category }}</nuxt-link></span>
                       <span>5 Comment</span>
                     </p>
                   </div>
@@ -58,7 +58,7 @@ export default {
   },
   data () {
     return {
-      title: 'Mon jolie titre',
+      title: 'Blog category : ' + this.$route.params.pathMatch,
       meta_desc: 'Je suis le magnifique content',
       posts: [
         {
@@ -89,7 +89,7 @@ export default {
   async fetch ({ store, params }) {
     await store.commit('unset_menu')
     await store.commit('changeTitle', 'Category')
-    await store.commit('changeH1', 'Category : ' + params.id)
+    await store.commit('changeH1', 'Category : ' + params.pathMatch)
     await store.commit('changeContent', 'Blog - Category')
   }
 }
