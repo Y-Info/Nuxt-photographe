@@ -5,24 +5,9 @@
         <div class="col-lg-8">
           <div class="row">
             <div v-for="post in posts" :key="post.id" class="col-md-6">
-              <div class="blog-entry">
-                <nuxt-link :to="{path: '/blog/article/' + post.title}" class="img img-2" style="background-image: url(/images/image_2.jpg);" />
-                <div class="text text-2 pt-2 mt-3">
-                  <h3 class="mb-2">
-                    <nuxt-link :to="{path: '/blog/article/' + post.title}">{{ post.title }}</nuxt-link>
-                  </h3>
-                  <div class="meta-wrap">
-                    <p class="meta">
-                      <span>Dec 14, 2018</span>
-                      <span><nuxt-link :to="{path: '/blog/category/' + post.category}">{{ post.category }}</nuxt-link></span>
-                      <span>5 Comment</span>
-                    </p>
-                  </div>
-                  <p class="mb-4">
-                    {{ post.content }}
-                  </p>
-                </div>
-              </div>
+              <BlogPreview
+                v-bind:post="post"
+              />
             </div>
           </div>
           <div class="row mt-5">
@@ -51,10 +36,12 @@
 
 <script>
 import SideBar from '../../../components/SideBar'
+import BlogPreview from '../../../components/BlogPreview'
 
 export default {
   components: {
-    SideBar
+    SideBar,
+    BlogPreview
   },
   data () {
     return {
@@ -66,14 +53,18 @@ export default {
           title: 'je suis le premier article',
           content: 'je suis le content de l\'article',
           category: 'category',
-          img: 'je suis une premiere image'
+          img: '/images/image_2.jpg',
+          date: '12 janv 2020',
+          nbComment: '5'
         },
         {
           id: 2,
           title: 'je suis un second titre',
           content: 'je suis le content de l\'article',
           category: 'category',
-          img: 'je suis la seconde image'
+          img: '/images/image_2.jpg',
+          date: '12 janv 2020',
+          nbComment: '1'
         }
       ]
     }
