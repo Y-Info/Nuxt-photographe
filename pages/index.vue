@@ -135,7 +135,7 @@ export default {
   async fetch ({ store }) {
     await store.commit('unset_menu')
     await store.commit('changeH1', 'Home')
-    await store.commit('changeTitle', 'Home - title')
+    await store.commit('changeTitle', 'Home')
     await store.commit('changeContent', 'je suis le contenu de home')
   }
 }

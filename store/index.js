@@ -5,7 +5,7 @@ const createStore = () => {
     state: () => ({
       menuTriger: false,
       currentPage: 'Home',
-      H1: 'home',
+      H1: 'Home',
       pageContent: ''
     }),
     mutations: {
