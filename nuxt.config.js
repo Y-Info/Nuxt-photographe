@@ -22,7 +22,7 @@ export default {
   /*
   ** Global CSS
   */
-  css: ['~/node_modules/bootstrap/dist/css/bootstrap.css', '@/assets/css/import_scss.scss', '@/assets/css/icomoon.css', '@/assets/css/alban_fix.css'],
+  css: ['~/node_modules/bootstrap/dist/css/bootstrap.css', '@/assets/css/import_scss.scss', '@/assets/css/icomoon.css', '@/assets/css/alban_fix.css', '~/node_modules/@fortawesome/fontawesome-free/css/all.css'],
   /*
   ** Nuxt.js dev-modules
   */
