@@ -341,3 +341,9 @@ h1, h2, h3, h4, h5,
   outline: none;
   color: #000000;
   background: #fff; }
+
+.menuSep{
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 30px 16px 0;
+}
