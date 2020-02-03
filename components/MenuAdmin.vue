@@ -6,7 +6,7 @@
   >
     <v-list dense>
       <p class="menuSep">
-        Menu
+        Front
       </p>
       <v-list-item
         v-for="item in items"
@@ -54,8 +54,9 @@ export default {
   data: () => ({
     items: [
       { icon: 'fas fa-home', text: 'Home', url: '/' },
-      { icon: 'fas fa-fire', text: 'Blog', url: '/' },
-      { icon: 'fas fa-heart', text: 'Contact', url: '/' }
+      { icon: 'fas fa-camera-retro', text: 'Gallery', url: '/gallery' },
+      { icon: 'fas fa-book', text: 'Blog', url: '/blog' },
+      { icon: 'fas fa-phone', text: 'About', url: '/about' }
     ],
     itemsAdmin: [
       { icon: 'fab fa-keycdn', text: 'Admin', url: '/admin' },
