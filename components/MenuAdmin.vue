@@ -64,7 +64,7 @@ export default {
       { icon: 'fas fa-tags', text: 'Category', url: '/admin/categories' },
       { icon: 'fas fa-images', text: 'Photo', url: '/admin/photos' },
       { icon: 'fas fa-share-alt', text: 'Reseaux sociaux', url: '/admin/rs' },
-      { icon: 'fas fa-user', text: 'User', url: '/admin/user' }
+      { icon: 'fas fa-user', text: 'User', url: '/admin/users' }
     ]
   }),
   created () {
