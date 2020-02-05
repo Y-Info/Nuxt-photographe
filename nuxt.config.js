@@ -1,5 +1,8 @@
 export default {
   mode: 'universal',
+  env: {
+    ApiUrl: 'https://its-time-to.herokuapp.com/api/'
+  },
   /*
   ** Headers of the page
   */
