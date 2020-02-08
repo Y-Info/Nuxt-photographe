@@ -5,6 +5,7 @@
     />
     <MenuAdmin />
     <v-content
+      id="colorlib-main"
       v-bind:class="{ active: $store.state.menuTriger }"
     >
       <nuxt />
@@ -13,8 +14,8 @@
 </template>
 
 <script>
-import MenuAdmin from '../components/MenuAdmin'
-import Burger from '../components/Burger'
+import MenuAdmin from '~/components/MenuAdmin'
+import Burger from '~/components/Burger'
 
 export default {
   components: {

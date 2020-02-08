@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper">
-    <div class="container">
+    <div class="container_login">
       <h1>Welcome</h1>
 
-      <form class="form">
+      <form class="form_login">
         <input type="text" placeholder="Username">
         <input type="password" placeholder="Password">
         <button id="login-button" type="submit">
@@ -40,7 +40,7 @@
     margin:0;
     overflow: hidden;
   }
-  .container {
+  .container_login {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -53,18 +53,18 @@
     z-index: 2
   ;
   }
-  .container h1 {
+  .container_login h1 {
     font-size: 40px;
     transition-duration: 1s;
     font-weight: 200;
     color: white;
   }
-  form {
+  form.form_login {
     padding: 20px 0;
     position: relative;
     z-index: 2;
   }
-  form input {
+  form.form_login input {
     display: block;
     appearance: none;
     outline: 0;
@@ -80,15 +80,15 @@
     transition-duration: 0.25s;
     font-weight: 300;
   }
-  form input:hover {
+  form.form_login input:hover {
     background-color: rgba(255,255,255,0.4);
   }
-  form input:focus {
+  form.form_login input:focus {
     background-color: white;
     width: 300px;
     color: #f67e7d;
   }
-  form button {
+  form.form_login button {
     appearance: none;
     outline: 0;
     background-color: white;
@@ -101,7 +101,7 @@
     font-size: 18px;
     transition-duration: 0.25s;
   }
-  form button:hover {
+  form.form_login button:hover {
     background-color: #f5f7f9;
   }
   .bg-bubbles {
