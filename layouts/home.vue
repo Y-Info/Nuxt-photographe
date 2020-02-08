@@ -15,9 +15,9 @@
 </template>
 
 <script>
-import Footer from '../components/Footer'
-import Menu from '../components/Menu'
-import Burger from '../components/Burger'
+import Footer from '~/components/Footer'
+import Menu from '~/components/Menu'
+import Burger from '~/components/Burger'
 
 export default {
   components: {
@@ -47,6 +47,9 @@ export default {
       rightDrawer: false,
       title: 'Vuetify.js'
     }
+  },
+  created () {
+    this.$vuetify.theme.dark = false
   }
 }
 </script>

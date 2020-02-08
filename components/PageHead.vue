@@ -12,7 +12,9 @@
           <h1 class="mb-3 bread">
             {{ $store.state.H1 }}
           </h1>
-          <p>{{ $store.state.pageContent }}</p>
+          <p class="grey--text">
+            {{ $store.state.pageContent }}
+          </p>
         </div>
       </div>
     </div>

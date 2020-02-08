@@ -35,8 +35,8 @@
 </template>
 
 <script>
-import SideBar from '../../components/SideBar'
-import BlogPreview from '../../components/BlogPreview'
+import SideBar from '~/components/SideBar'
+import BlogPreview from '~/components/BlogPreview'
 
 export default {
   components: {

@@ -16,10 +16,10 @@
 </template>
 
 <script>
-import Footer from '../components/Footer'
-import Menu from '../components/Menu'
-import Burger from '../components/Burger'
-import PageHead from '../components/PageHead'
+import Footer from '~/components/Footer'
+import Menu from '~/components/Menu'
+import Burger from '~/components/Burger'
+import PageHead from '~/components/PageHead'
 
 export default {
   components: {
@@ -27,6 +27,9 @@ export default {
     Menu,
     Burger,
     PageHead
+  },
+  created () {
+    this.$vuetify.theme.dark = false
   }
 }
 </script>

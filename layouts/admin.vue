@@ -21,6 +21,9 @@ export default {
   components: {
     MenuAdmin,
     Burger
+  },
+  created () {
+    this.$vuetify.theme.dark = true
   }
 }
 </script>

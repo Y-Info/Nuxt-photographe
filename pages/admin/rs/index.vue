@@ -93,8 +93,6 @@
   </v-container>
 </template>
 <script>
-import axios from 'axios'
-
 export default {
   layout: 'admin',
   data: () => ({
@@ -163,7 +161,7 @@ export default {
 
   methods: {
     initialize () {
-      axios
+      this.$axios
         .get(process.env.ApiUrl + 'event')
         .then(response => (this.events = response.data))
     },
@@ -176,7 +174,7 @@ export default {
 
     deleteItem (item) {
       const index = this.events.indexOf(item)
-      confirm('Are you sure you want to delete this item?') && axios
+      confirm('Are you sure you want to delete this item?') && this.$axios
         .delete(process.env.ApiUrl + 'event/' + item._id)
         .then(this.events.splice(index, 1))
     },
@@ -191,7 +189,7 @@ export default {
 
     save () {
       if (this.editedIndex > -1) {
-        axios.put(process.env.ApiUrl + 'event/' + this.editedItem._id, {
+        this.$axios.put(process.env.ApiUrl + 'event/' + this.editedItem._id, {
           title: this.editedItem.title,
           description: this.editedItem.description,
           type: this.editedItem.type,
@@ -201,7 +199,7 @@ export default {
           .catch((e) => { this.errors.push(e) })
       } else {
         this.events.push(this.editedItem)
-        axios.post(process.env.ApiUrl + 'event/', {
+        this.$axios.post(process.env.ApiUrl + 'event/', {
           title: this.editedItem.title,
           description: this.editedItem.description,
           type: this.editedItem.type,
