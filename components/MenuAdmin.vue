@@ -103,9 +103,11 @@ export default {
     itemsAdmin: [
       { icon: 'fab fa-keycdn', text: 'Admin', url: '/admin' },
       { icon: 'fas fa-newspaper', text: 'Articles', url: '/admin/articles' },
+      { icon: 'fas fa-comment', text: 'Commentaires', url: '/admin/comments' },
       { icon: 'fas fa-tags', text: 'Categories', url: '/admin/categories' },
       { icon: 'fas fa-images', text: 'Photos', url: '/admin/photos' },
       { icon: 'fas fa-share-alt', text: 'Reseaux sociaux', url: '/admin/rs' },
+      { icon: 'fas fa-envelope', text: 'Contacts', url: '/admin/contacts' },
       { icon: 'fas fa-user', text: 'Users', url: '/admin/users' }
     ]
   })
