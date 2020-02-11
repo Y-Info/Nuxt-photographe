@@ -46,16 +46,6 @@
             About
           </nuxt-link>
         </li>
-        <li v-if="$store.state.currentPage === 'Blog' || $store.state.currentPage === 'Article' || $store.state.currentPage === 'Category' || $store.state.currentPage === 'Tag' " class="colorlib-active">
-          <nuxt-link color="primary" nuxt to="/blog">
-            Blog
-          </nuxt-link>
-        </li>
-        <li v-else>
-          <nuxt-link color="primary" nuxt to="/blog">
-            Blog
-          </nuxt-link>
-        </li>
         <li v-if="$store.state.currentPage === 'Contact'" class="colorlib-active">
           <nuxt-link color="primary" nuxt to="/contact">
             Contact
@@ -97,14 +87,10 @@ export default {
     items: [
       { icon: 'fas fa-home', text: 'Home', url: '/' },
       { icon: 'fas fa-camera-retro', text: 'Gallery', url: '/gallery' },
-      { icon: 'fas fa-book', text: 'Blog', url: '/blog' },
       { icon: 'fas fa-phone', text: 'About', url: '/about' }
     ],
     itemsAdmin: [
       { icon: 'fab fa-keycdn', text: 'Admin', url: '/admin' },
-      { icon: 'fas fa-newspaper', text: 'Articles', url: '/admin/articles' },
-      { icon: 'fas fa-comment', text: 'Commentaires', url: '/admin/comments' },
-      { icon: 'fas fa-tags', text: 'Categories', url: '/admin/categories' },
       { icon: 'fas fa-images', text: 'Photos', url: '/admin/photos' },
       { icon: 'fas fa-share-alt', text: 'Reseaux sociaux', url: '/admin/rs' },
       { icon: 'fas fa-envelope', text: 'Contacts', url: '/admin/contacts' },
