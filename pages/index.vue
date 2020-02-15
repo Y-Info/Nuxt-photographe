@@ -132,11 +132,11 @@ export default {
     }
   },
   layout: 'home',
-  async fetch ({ store }) {
-    await store.commit('unset_menu')
-    await store.commit('changeH1', 'Home')
-    await store.commit('changeTitle', 'Home')
-    await store.commit('changeContent', 'je suis le contenu de home')
+  fetch ({ store }) {
+    store.commit('unset_menu')
+    store.commit('changeH1', 'Home')
+    store.commit('changeTitle', 'Home')
+    store.commit('changeContent', 'je suis le contenu de home')
   }
 }
 </script>

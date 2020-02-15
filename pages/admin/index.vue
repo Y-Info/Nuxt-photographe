@@ -27,10 +27,10 @@ export default {
       ]
     }
   },
-  async fetch ({ store }) {
-    await store.commit('unset_menu')
-    await store.commit('changeH1', 'Admin')
-    await store.commit('changeTitle', 'Accueil Admin')
+  fetch ({ store }) {
+    store.commit('unset_menu')
+    store.commit('changeH1', 'Admin')
+    store.commit('changeTitle', 'Accueil Admin')
   }
 }
 </script>

@@ -91,11 +91,11 @@ export default {
       ]
     }
   },
-  async fetch ({ store }) {
-    await store.commit('unset_menu')
-    await store.commit('changeH1', 'Contact - title')
-    await store.commit('changeTitle', 'Contact')
-    await store.commit('changeContent', 'Contact - content')
+  fetch ({ store }) {
+    store.commit('unset_menu')
+    store.commit('changeH1', 'Contact - title')
+    store.commit('changeTitle', 'Contact')
+    store.commit('changeContent', 'Contact - content')
   }
 }
 </script>
