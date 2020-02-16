@@ -131,6 +131,8 @@ export default {
       ]
     }
   },
+  transition: 'bounce',
+
   layout: 'home',
   fetch ({ store }) {
     store.commit('unset_menu')

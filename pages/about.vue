@@ -44,6 +44,7 @@ export default {
       ]
     }
   },
+  transition: 'bounce',
   fetch ({ store }) {
     store.commit('unset_menu')
     store.commit('changeH1', 'About- Title')
