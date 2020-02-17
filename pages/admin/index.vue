@@ -30,7 +30,6 @@ export default {
   fetch ({ store }) {
     store.commit('unset_menu')
     store.commit('changeH1', 'Admin')
-    store.commit('changeTitle', 'Accueil Admin')
   }
 }
 </script>

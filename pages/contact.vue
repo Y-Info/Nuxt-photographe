@@ -95,7 +95,6 @@ export default {
   fetch ({ store }) {
     store.commit('unset_menu')
     store.commit('changeH1', 'Contact - title')
-    store.commit('changeTitle', 'Contact')
     store.commit('changeContent', 'Contact - content')
   }
 }

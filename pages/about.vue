@@ -48,7 +48,6 @@ export default {
   fetch ({ store }) {
     store.commit('unset_menu')
     store.commit('changeH1', 'About- Title')
-    store.commit('changeTitle', 'About')
     store.commit('changeContent', 'About - Content')
   }
 }

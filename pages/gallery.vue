@@ -135,7 +135,6 @@ export default {
   fetch ({ store }) {
     store.commit('unset_menu')
     store.commit('changeH1', 'Gallery - title')
-    store.commit('changeTitle', 'Gallery')
     store.commit('changeContent', 'Gallery - content')
   }
 }

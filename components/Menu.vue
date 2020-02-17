@@ -16,7 +16,7 @@
     </h1>
     <nav id="colorlib-main-menu" role="navigation">
       <ul>
-        <li v-if="$store.state.currentPage === 'Home'" class="colorlib-active">
+        <li v-if="$nuxt.$route.name === 'index'" class="colorlib-active">
           <nuxt-link color="primary" nuxt to="/">
             Home
           </nuxt-link>
@@ -26,7 +26,7 @@
             Home
           </nuxt-link>
         </li>
-        <li v-if="$store.state.currentPage === 'Gallery'" class="colorlib-active">
+        <li v-if="$nuxt.$route.name === 'gallery'" class="colorlib-active">
           <nuxt-link color="primary" nuxt to="/gallery">
             Gallery
           </nuxt-link>
@@ -36,7 +36,7 @@
             Gallery
           </nuxt-link>
         </li>
-        <li v-if="$store.state.currentPage === 'About'" class="colorlib-active">
+        <li v-if="$nuxt.$route.name === 'about'" class="colorlib-active">
           <nuxt-link color="primary" nuxt to="/about">
             About
           </nuxt-link>
@@ -46,7 +46,7 @@
             About
           </nuxt-link>
         </li>
-        <li v-if="$store.state.currentPage === 'Contact'" class="colorlib-active">
+        <li v-if="$nuxt.$route.name === 'contact'" class="colorlib-active">
           <nuxt-link color="primary" nuxt to="/contact">
             Contact
           </nuxt-link>

@@ -137,7 +137,6 @@ export default {
   fetch ({ store }) {
     store.commit('unset_menu')
     store.commit('changeH1', 'Home')
-    store.commit('changeTitle', 'Home')
     store.commit('changeContent', 'je suis le contenu de home')
   }
 }

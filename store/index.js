@@ -4,7 +4,6 @@ const createStore = () => {
   return new Vuex.Store({
     state: () => ({
       menuTriger: false,
-      currentPage: 'Home',
       H1: 'Home',
       pageContent: ''
     }),
@@ -14,9 +13,6 @@ const createStore = () => {
       },
       unset_menu (state) {
         state.menuTriger = false
-      },
-      changeTitle (state, name) {
-        state.currentPage = name
       },
       changeH1 (state, newTitle) {
         state.H1 = newTitle
