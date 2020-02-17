@@ -5,7 +5,7 @@
         <div class="col-md-9">
           <p class="breadcrumbs">
             <span class="mr-2"><nuxt-link nuxt to="/">Home</nuxt-link></span>
-            <span>{{ $nuxt.$route.name }}</span>
+            <span v-if="$nuxt.$route.name !== 'index'">{{ $nuxt.$route.name }}</span>
           </p>
           <h1 class="mb-3 bread">
             {{ $store.state.H1 }}

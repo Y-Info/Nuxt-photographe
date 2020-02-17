@@ -91,7 +91,7 @@ export default {
       ]
     }
   },
-  transition: 'bounce',
+  transition: 'opacity',
   fetch ({ store }) {
     store.commit('unset_menu')
     store.commit('changeH1', 'Contact - title')

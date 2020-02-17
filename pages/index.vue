@@ -131,9 +131,7 @@ export default {
       ]
     }
   },
-  transition: 'bounce',
-
-  layout: 'home',
+  transition: 'opacity',
   fetch ({ store }) {
     store.commit('unset_menu')
     store.commit('changeH1', 'Home')

@@ -347,18 +347,17 @@ h1, h2, h3, h4, h5,
 .ftco-section p{
   color: #47494e;
 }
-
-.bounce-enter-active {
-  animation: bounce-in .6s;
+.opacity-enter-active {
+  animation: opacity-in .6s;
 }
-.bounce-leave-active {
-  animation: bounce-out .3s;
+.opacity-leave-active {
+  animation: opacity-out .3s;
 }
-@keyframes bounce-in {
+@keyframes opacity-in {
   0% { opacity: 0 }
   100% { opacity: 1}
 }
-@keyframes bounce-out {
+@keyframes opacity-out {
   0% { opacity: 1 }
   100% { opacity: 0 }
 }
